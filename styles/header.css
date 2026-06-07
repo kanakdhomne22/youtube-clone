@@ -1,0 +1,139 @@
+.header{
+    height:59px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(228,228,228);
+    z-index: 100;
+}
+.search-box{
+    display:block;
+}
+.left-section{
+    display:flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.hamburger-menu{
+    height:24px;
+    margin-right: 24px;
+    margin-left:24px
+}
+.youtube-logo{
+    height:24px;
+}
+.middle-section{
+    flex:1;
+    max-width:500px;
+    display:flex;
+    align-items: center;
+    margin-left:70px;
+    margin-right:35px;
+}
+
+.search-box{
+    flex:1;
+    height:37px;
+    padding-left:10px;
+    border:1px solid rgb(212, 206, 206);
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0,05);
+    width:0;
+}
+.search-box::placeholder{
+    font-family: Roboto,arial;
+    font-size: 16px;
+}
+
+.search-btn{
+    height:40px;
+    width:72px;
+    background-color: rgb(240,240,240);  
+    border:1px solid rgb(212, 206, 206);
+    margin-left:-1px;
+}
+.search-btn,
+.voice-btn{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn div,
+.voice-btn div,
+.upload-icon-cont div,
+.youtube-app-cont div,
+.noti 
+{
+    position: absolute;
+    background-color: grey;
+    color:#fff;
+    padding:4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom:-30px;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-btn:hover div,
+.voice-btn:hover div,
+.upload-icon-cont:hover div,
+.youtube-app-cont:hover div,
+.noti:hover 
+{
+    opacity:1;
+}
+.search-icon{
+    height:25px;
+}
+.voice-btn{
+    height:40px;
+    width:40px;
+    border:none;
+    background-color: rgba(242, 240, 240, 0.904);  
+    border-radius: 20px;
+    margin-left:8px;
+}
+.voice-icon{
+    height:24px;
+    background-color: rgb(245,245,245);
+}
+.right-section{
+    width:200px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-right: 24px; */
+    flex-shrink:0;
+}
+
+.upload-icon,.youtube-app-icon,.notification-icon{
+    height:30px; 
+}
+.notifications-icon-container{
+    position:relative;
+}
+.notifications-count{
+    position:absolute;
+    top:-2px;
+    right:-5px;
+    background-color: rgb(217, 10, 10);
+    color: #fff;
+    border-radius: 12px;
+    font-family: roboto,arial;
+    font-size: 11px;
+    padding:2px 5px 2px 5px;
+}
+.my-profile{
+    height:40px;
+    border-radius: 20px;
+
+}
